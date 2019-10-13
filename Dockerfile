@@ -9,4 +9,5 @@ RUN yum install -y java-1.8.0-openjdk.x86_64 --nogpgcheck
 ENV PATH=$PATH:/opt/tomcat9/bin
 #ENTRYPOINT [""]
 EXPOSE 8080
+EXPOSE 3306
 ENTRYPOINT ["catalina.sh" , "run" ]
